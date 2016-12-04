@@ -1,6 +1,6 @@
 # nodejs_rest_example 
 ## sample run
-```javascript
+```bash
 ubuntu@ip-172-31-52-30:~$ curl  http://52.91.18.76/quote/all | python -m json.tool
 [
     {
