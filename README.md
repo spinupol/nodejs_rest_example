@@ -86,5 +86,9 @@ ubuntu@ip-172-31-52-30:~$ curl  http://52.91.18.76/quote/all | python -m json.to
         "who": "Batman"
     }
 ]
+curl can do SOAP calls too ;-)
+$ curl -H "Content-Type: text/xml; charset=utf-8" -H "SOAPAction:"  -d @req.xml -X POST http://www.dneonline.com/calculator.asmx
+<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><AddResponse xmlns="http://tempuri.org/"><AddResult>30</AddResult></AddResponse></soap:Body></soap:Envelope>
+
 ```
 
